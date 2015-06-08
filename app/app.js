@@ -43,7 +43,7 @@
         
         this.classes = [{
             name: 'Bagua Basics',
-            description: 'In this class we focus upon the weapon systems of Bagua Zhang as well as a comparitive study of Tai Ji, Xing Yi and Muay Boran.',
+            description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing.',
             day: 'Wednesday',
             time: '17:00pm - 19:00pm',
             location: 
@@ -55,8 +55,8 @@
             }
         }, 
         {
-            name: 'Bagua Weapons',
-            description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing.',
+            name: 'Weapons, Xing Yi, Tai Ji and Muay Boran',
+            description: 'In this class we focus upon the weapon systems of Bagua Zhang as well as a comparitive study of Tai Ji, Xing Yi and Muay Boran.',
             day: 'Thursday',
             time: '17:00pm - 19:00pm',
             location: 
