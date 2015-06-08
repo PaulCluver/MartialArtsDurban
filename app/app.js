@@ -19,38 +19,6 @@
                     description: 'Internal martial arts of Bagua Zhang, Xing Yi Chuan, Tai Ji Chuan and Muay Boran in Durban South Africa'
                 }
             })
-            .state('BaguaZhang', {
-                url: '/BaguaZhang',
-                templateUrl: 'partials/BaguaZhang/BaguaZhang.html',
-                data: {
-                    pageTitle : 'Martial Arts Durban - Bagua Zhang Kung Fu',
-                    description: 'This page provides information on the martial art of Bagua Zhang Kung Fu.'
-                }
-            })
-            .state('XingYiChuan', {
-                url: '/XingYiChuan',
-                templateUrl: 'partials/XingYiChuan/XingYiChuan.html',
-                data: {
-                    pageTitle : 'Martial Arts Durban - Xing Yi Chuan Kung Fu',
-                    description: 'This page provides information on the martial art of Xing Yi Chuan Kung Fu.',
-                }
-            })            
-            .state('TaiJiChuan', {
-                url: '/TaiJiChuan',
-                templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',
-                data: {
-                    pageTitle : 'Martial Arts Durban - Tai Ji Chuan Kung Fu',
-                    description: 'This page provides information on the martial art of Tai Ji Chuan Kung Fu.',
-                }
-            }) 
-            .state('MuayBoran', {
-                url: '/MuayBoran',
-                templateUrl: 'partials/MuayBoran/MuayBoran.html',
-                data: {
-                    pageTitle : 'Martial Arts Durban - Muay Boran',
-                    description: 'This page provides information on the martial art of Muay Boran.',
-                }
-            }) 
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'partials/contact/contact.html',               
