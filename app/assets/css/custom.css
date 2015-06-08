@@ -1,5 +1,5 @@
 .top-bar {
-    background: #000000;
+    background: #3A9AD9;
 }
 
 .top-bar-section li a:not(.button) {
@@ -19,7 +19,7 @@
 }
 
 .title-area h1 a.active {
-    background-color: #000000
+    background-color: #354458
 }
 .textWrap {
     float: right;
