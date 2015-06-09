@@ -6,7 +6,7 @@
 
     martialArtsApp.constant('VERSION', '0.1');
 
-    martialArtsApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+    martialArtsApp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
         
         $urlRouterProvider.otherwise('/home');
         $stateProvider
@@ -69,7 +69,10 @@
                 }
             })
 
-               
+       $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+        });        
     });
 
     martialArtsApp.service('ClassesDataService', function() {
