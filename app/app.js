@@ -27,7 +27,7 @@
                     description: 'This page provides contact information on Durban Bagua Zhang Kung Fu.'
                 }
             })
-             .state('classes', {
+            .state('classes', {
                 url: '/classes',
                 templateUrl: 'partials/classes/classes.html',   
                 controller: 'classesCtrl',            
@@ -35,7 +35,40 @@
                     pageTitle : 'Martial Arts Durban - Classes',
                     description: 'This page provides class information for martial arts classes.'
                 }
-            })     
+            })  
+            .state('BaguaZhang', {
+                url: '/BaguaZhang',
+                templateUrl: 'partials/BaguaZhang/BaguaZhang.html',   
+                data: {
+                    pageTitle : 'Martial Arts Durban - Bagua Zhang',
+                    description: 'This page provides information about the martial art of Bagua Zhang.'
+                }
+            })
+            .state('XingYiChuan', {
+                url: '/XingYiChuan',
+                templateUrl: 'partials/XingYiChuan/XingYiChuan.html',   
+                data: {
+                    pageTitle : 'Martial Arts Durban - Xing Yi Chuan',
+                    description: 'This page provides information about the martial art of Xing Yi Chuan.'
+                }
+            })
+            .state('TaiJiChaun', {
+                url: '/TaiJiChaun',
+                templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',   
+                data: {
+                    pageTitle : 'Martial Arts Durban - Tai Ji Chuan',
+                    description: 'This page provides information about the martial art of Tai Ji Chuan.'
+                }
+            })
+            .state('MuayBoran', {
+                url: '/MuayBoran',
+                templateUrl: 'partials/MuayBoran/MuayBoran.html',   
+                data: {
+                    pageTitle : 'Martial Arts Durban - Muay Boran',
+                    description: 'This page provides information about the martial art of Muay Boran.'
+                }
+            })
+
                
     });
 

@@ -1,26 +1,3 @@
-.top-bar {
-    background: #7F7F7F;
-}
-
-.top-bar-section li a:not(.button) {
-    background: #6D2908 !important;
-}
-
-.top-bar-section li a:not(.button):hover {
-    background: #C86013 !important;
-}
-
-.top-bar-section ul li.active > a {
-    background: #C86013 !important;
-}
-
-.top-bar-section ul li.active > a:hover {
-    background: yellow !important;
-}
-
-.title-area h1 a.active {
-    background-color: #354458
-}
 .textWrap {
     float: right;
     margin: 10px
@@ -56,3 +33,4 @@
    font-style:italic;
    font-size: 16px
 }
+
