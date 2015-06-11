@@ -3,20 +3,21 @@
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" ng-app="martialArtsApp" ng-controller="appCtrl">
 
 <head>
+    <base href="/"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
     <meta name="description" content="{{description}}" />
     <meta name="author" content="Durban Traditional Matrial Arts"/>
     <meta name="copyright" content="Durban Traditional Matrial Arts (c) 2015"/
-    <meta name="keywords" content="kung fu, gong fu, martial arts, self defence, internal, bagua, bagua zhang, baguazhang, pakua, pakkua chang, pakuachang, xingyi, hsing yi, xing yo, tai ci, tai ji, neijia, nei jia, weapons, sword, sabre, spear, chi gung, qigong, muay thai, muay boran" />
+    <meta name="keywords" content="kung fu, gong fu, martial arts, self defence, internal, bagua, bagua zhang, baguazhang, pakua, pakkua chang, pakuachang, xingyi, hsing yi, xing yo, tai ci, tai ji, neijia, nei jia, weapons, sword, sabre, spear, chi gung, qigong, muay thai, Muay Thai Boran" />
     <link rel="stylesheet" href="bower_components/zurb-foundation-npm/css/foundation.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
-
 <body>
     <div class="row">
+
         <div class="large-12 columns">
             <nav class="top-bar" data-topbar>
                 <ul class="title-area">
@@ -27,12 +28,12 @@
                 <section class="top-bar-section">
                     <ul class="left">
                         <li class="has-dropdown">
-                            <a href="#">Martial Arts</a>
+                            <a href="#" style="border-left:1px solid #FFF; ">Martial Arts</a>
                             <ul class="dropdown">                                
                                 <li><a ui-sref="BaguaZhang">Bagua Zhang</a></li>
                                 <li><a ui-sref="XingYiChuan">Xing Yi Chuan</a></li>
                                 <li><a ui-sref="TaiJiChuan">Tai Ji Chuan</a></li>
-                                <li><a ui-sref="MuayBoran">Muay Boran</a></li>
+                                <li><a ui-sref="MuayBoran">Muay Thai Boran</a></li>
                             </ul>
                         </li>
                         <li>
@@ -49,23 +50,22 @@
                             </form>
                         </li>
                         <li class="has-button">
-                            <a class="small button" href="#">Search</a>
+                            <a class="small button" href="#" style="background-color: #6D2908; border-right:2px solid #000">Search</a>
                         </li>
                     </ul>
                 </section>
             </nav>
         </div>
     </div>
-    <div class="row">
-        <p>
+    <div class="row">    
+        <p>    
             <div class="large-12 columns">
                 <div class='panel'>
-                    <p><h4><span id="quote">{{quotes.text}}</span><span class="quoteAuthor"> - {{quotes.author}}</span></h4></p>
+                    <p><h4><span id="quote">{{quotes.text}}</span><span class="quoteAuthor"> {{quotes.author}}</span></h4></p>
                 </div>
             </div>
         </p>
-    </div>
-    <br>
+    </div>    
     <div class="row">
         <div ui-view></div>
     </div>
@@ -79,7 +79,7 @@
                                 <h4>Our Approach</h4>
                                 <hr>
                                 <h5 class="subheader">
-                                   The aim of the Durban Martial Arts Association is to provide systematic instruction to help motivated individuals to attain an understanding of their movement potential through the practice of martial arts. Twice weekly classes are offered in the martial arts of Bagua Zhang, Xing Yi Quan, Tai Ji Quan and Muay Boran.
+                                   The aim of the Durban Martial Arts Association is to provide systematic instruction to help motivated individuals to attain an understanding of their movement potential through the practice of martial arts. Twice weekly classes are offered in the martial arts of Bagua Zhang, Xing Yi Quan, Tai Ji Quan and Muay Thai Boran.
                                 </h5>
                                 <div class="show-for-small" style="text-align: center">
                                     <a class="small radius button" ui-sref="contact">Contact Us!</a>

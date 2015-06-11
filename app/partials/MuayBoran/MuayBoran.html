@@ -1,5 +1,55 @@
 <div class="large-12 columns">
 	<p class="text-justify">
-		Devloped on the battlefields of ancient Siam, Muay Boran is a martial art which seeks to train the practitioner to use his or her entire body as an attacking surface. In doing this, fundamental striking methods for the fist, open palm, forearm, elbow, shoulder, foot, shin, knee and hip are taught. Employing devastating striking, bone breaking joint locks and throws, this practical martial art is fast, efficient, resolute and deadly.
+		Developed on the battlefields of ancient Siam, Muay Thai Boran is a martial art which seeks to train the practitioner to use his or her entire body as an attacking surface. In doing this, fundamental striking methods for the fist, open palm, forearm, elbow, shoulder, foot, shin, knee and hip are taught. Employing devastating striking, bone breaking joint locks and throws, this practical martial art is fast, efficient, resolute and deadly.
 	</p>	
+	<p>
+		Alongside a plethora of training drills, Muay Thai Boran is primarilly divided into 15 major and 15 minor techniques. These are known as Mae Mai and Luk Mai respectively. These are as follows: 
+	</p>
+	<p>
+
+		<table cellspacing="5" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th colspan="4">MAI MAI</th>
+				</tr>
+				<tr>
+					<th>Thai Name</th>
+					<th>English Name</th>
+					<th>Description</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="technique in techniquesMaeMai">
+					<td valign="top" width="20%">{{technique.thaiName}}</td>
+					<td valign="top" width="20%">{{technique.englishName}}</td>
+					<td valign="top" width="40%">{{technique.description}}</td>
+					<td valign="top" width="20%"><img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+	<p>
+		<table cellspacing="5" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th colspan="4">LUK MAI</th>
+				</tr>
+				<tr>
+					<th>Thai Name</th>
+					<th>English Name</th>
+					<th>Description</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="technique in techniquesLukMai">
+					<td valign="top" width="20%">{{technique.thaiName}}</td>
+					<td valign="top" width="20%">{{technique.englishName}}</td>
+					<td valign="top" width="40%">{{technique.description}}</td>
+					<td valign="top" width="20%"><img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
 </div>

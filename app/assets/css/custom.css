@@ -33,4 +33,50 @@
    font-style:italic;
    font-size: 16px
 }
+.textAlignCenter {
+  text-align: center;
+}
+.top-bar {
+    background: #000000;
+}
+
+.top-bar-section li a:not(.button) {
+    background: #6D2908 !important;
+    border-right:1px solid #FFF; 
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #C86013 !important;
+}
+
+.top-bar-section ul li.active > a {
+    background: #C86013 !important;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: yellow !important;
+}
+
+.title-area h1 a.active {
+    background-color: #000000
+}
+
+.panel.callout  {
+  border-color: #D1D1D1;
+  background-color: #e8dfda;
+}
+
+.panel a {
+  color: #C86013;
+  text-align: center
+}
+
+.inline-list a{
+  color: #C86013;
+}
+
+.customButton {
+  background-color: #;
+  height:10px;
+}
 
