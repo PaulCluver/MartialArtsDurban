@@ -51,8 +51,8 @@
                     description: 'This page provides information about the martial art of Xing Yi Chuan.'
                 }
             })
-            .state('TaiJiChaun', {
-                url: '/TaiJiChaun',
+            .state('TaiJiChuan', {
+                url: '/TaiJiChuan',
                 templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',   
                 data: {
                     pageTitle : 'Martial Arts Durban - Tai Ji Chuan',

@@ -1,9 +1,10 @@
 <div class="large-12 columns">
+	<div class="textWrapLeft"><img src="assets/img/warrior.jpg" alt="Muay Thai Boran" border="0" width="152"></div>
 	<p class="text-justify">
-		Developed on the battlefields of ancient Siam, Muay Thai Boran is a martial art which seeks to train the practitioner to use his or her entire body as an attacking surface. In doing this, fundamental striking methods for the fist, open palm, forearm, elbow, shoulder, foot, shin, knee and hip are taught. Employing devastating striking, bone breaking joint locks and throws, this practical martial art is fast, efficient, resolute and deadly.
+		Developed on the battlefields of ancient Siam, Muay Thai Boran is a an umbrella term for a group of traditional Thai martial arts which seeks to train the practitioner to use his or her entire body as an attacking surface. When the ancient Thai warrior lost his weapons on the battlefield, he would resort to Muay Thai Boran to protect himself. In doing this, fundamental striking methods for the fist, open palm, forearm, elbow, shoulder, foot, shin, knee and hip are taught. Employing devastating striking, bone breaking joint locks and throws, this practical martial art is fast, efficient, resolute and deadly. 
 	</p>	
-	<p>
-		Alongside a plethora of training drills, Muay Thai Boran is primarilly divided into 15 major and 15 minor techniques. These are known as Mae Mai and Luk Mai respectively. These are as follows: 
+	<p class="text-justify">
+		In addition to the offensive and defensive techniques of traditional Muay Thai Boran, specific stepping drills are practiced which include the 3 Treasures Step, 4 Point Stepping and 3 Strike Stepping. The key advantage of training these varied stepping methods is the development of speed, balance and precision when advancing, retreating or turning the back. Alongside a plethora of training drills, Muay Thai Boran is primarilly divided into 15 major and 15 minor techniques. These are known as Mae Mai and Luk Mai respectively and are as follows: 
 	</p>
 	<p>
 
@@ -21,9 +22,9 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="technique in techniquesMaeMai">
-					<td valign="top" width="20%">{{technique.thaiName}}</td>
-					<td valign="top" width="20%">{{technique.englishName}}</td>
-					<td valign="top" width="40%">{{technique.description}}</td>
+					<td valign="top" width="15%">{{technique.thaiName}}</td>
+					<td valign="top" width="15%">{{technique.englishName}}</td>
+					<td valign="top" width="50%" class="text-justify">{{technique.description}}</td>
 					<td valign="top" width="20%"><img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}"></td>
 				</tr>
 			</tbody>
@@ -44,9 +45,9 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="technique in techniquesLukMai">
-					<td valign="top" width="20%">{{technique.thaiName}}</td>
-					<td valign="top" width="20%">{{technique.englishName}}</td>
-					<td valign="top" width="40%">{{technique.description}}</td>
+					<td valign="top" width="15%">{{technique.thaiName}}</td>
+					<td valign="top" width="15%">{{technique.englishName}}</td>
+					<td valign="top" width="50%" class="text-justify">{{technique.description}}</td>
 					<td valign="top" width="20%"><img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}"></td>
 				</tr>
 			</tbody>
