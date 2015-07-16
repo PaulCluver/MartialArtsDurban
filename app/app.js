@@ -32,7 +32,7 @@
                 controller: 'classesCtrl',            
                 data: {
                     pageTitle : 'Martial Arts Durban - Classes',
-                    description: 'This page provides class information for martial arts classes.'
+                    description: 'This page provides class information for Bagua Zhang, Xing Yi Chuan, Tai Ji Chuan and Muay Thai Boran martial arts classes in Durban, South Africa.'
                 }
             })  
             .state('BaguaZhang', {
@@ -40,7 +40,7 @@
                 templateUrl: 'partials/BaguaZhang/BaguaZhang.html',   
                 data: {
                     pageTitle : 'Martial Arts Durban - Bagua Zhang',
-                    description: 'This page provides information about the martial art of Bagua Zhang.'
+                    description: 'This page provides information about the martial art of Bagua Zhang as taught at Martial Arts Durban.'
                 }
             })
             .state('XingYiChuan', {
@@ -48,7 +48,7 @@
                 templateUrl: 'partials/XingYiChuan/XingYiChuan.html',   
                 data: {
                     pageTitle : 'Martial Arts Durban - Xing Yi Chuan',
-                    description: 'This page provides information about the martial art of Xing Yi Chuan.'
+                    description: 'This page provides information about the martial art of Xing Yi Chuan as taught at Martial Arts Durban.'
                 }
             })
             .state('TaiJiChuan', {
@@ -56,7 +56,7 @@
                 templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',   
                 data: {
                     pageTitle : 'Martial Arts Durban - Tai Ji Chuan',
-                    description: 'This page provides information about the martial art of Tai Ji Chuan.'
+                    description: 'This page provides information about the martial art of Tai Ji Chuan as taught at Martial Arts Durban.'
                 }
             })
             .state('MuayBoran', {
@@ -65,7 +65,7 @@
                 templateUrl: 'partials/MuayBoran/MuayBoran.html',   
                 data: {
                     pageTitle : 'Martial Arts Durban - Muay Thai Boran',
-                    description: 'This page provides information about the martial art of Muay Thai Boran.'
+                    description: 'This page provides information about the martial art of Muay Thai Boran as taught at Martial Arts Durban.'
                 }
             })
 
