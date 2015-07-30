@@ -7,7 +7,7 @@
     martialArtsApp.constant('VERSION', '0.1');
 
     martialArtsApp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
-        
+
         $urlRouterProvider.otherwise('/home');
         $stateProvider
             .state('home', {
@@ -20,7 +20,7 @@
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'partials/contact/contact.html',               
+                templateUrl: 'partials/contact/contact.html',
                 data: {
                     pageTitle : 'Martial Arts Durban - Contact',
                     description: 'This page provides contact information on Durban Bagua Zhang Kung Fu.'
@@ -28,16 +28,16 @@
             })
             .state('classes', {
                 url: '/classes',
-                templateUrl: 'partials/classes/classes.html',   
-                controller: 'classesCtrl',            
+                templateUrl: 'partials/classes/classes.html',
+                controller: 'classesCtrl',
                 data: {
                     pageTitle : 'Martial Arts Durban - Classes',
                     description: 'This page provides class information for Bagua Zhang, Xing Yi Chuan, Tai Ji Chuan and Muay Thai Boran martial arts classes in Durban, South Africa.'
                 }
-            })  
+            })
             .state('BaguaZhang', {
                 url: '/BaguaZhang',
-                templateUrl: 'partials/BaguaZhang/BaguaZhang.html',   
+                templateUrl: 'partials/BaguaZhang/BaguaZhang.html',
                 data: {
                     pageTitle : 'Martial Arts Durban - Bagua Zhang',
                     description: 'This page provides information about the martial art of Bagua Zhang as taught at Martial Arts Durban.'
@@ -45,7 +45,7 @@
             })
             .state('XingYiChuan', {
                 url: '/XingYiChuan',
-                templateUrl: 'partials/XingYiChuan/XingYiChuan.html',   
+                templateUrl: 'partials/XingYiChuan/XingYiChuan.html',
                 data: {
                     pageTitle : 'Martial Arts Durban - Xing Yi Chuan',
                     description: 'This page provides information about the martial art of Xing Yi Chuan as taught at Martial Arts Durban.'
@@ -53,7 +53,7 @@
             })
             .state('TaiJiChuan', {
                 url: '/TaiJiChuan',
-                templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',   
+                templateUrl: 'partials/TaiJiChuan/TaiJiChuan.html',
                 data: {
                     pageTitle : 'Martial Arts Durban - Tai Ji Chuan',
                     description: 'This page provides information about the martial art of Tai Ji Chuan as taught at Martial Arts Durban.'
@@ -61,13 +61,13 @@
             })
             .state('MuayBoran', {
                 url: '/MuayBoran',
-                controller: 'muayBoranCtrl',  
-                templateUrl: 'partials/MuayBoran/MuayBoran.html',   
+                controller: 'muayBoranCtrl',
+                templateUrl: 'partials/MuayBoran/MuayBoran.html',
                 data: {
                     pageTitle : 'Martial Arts Durban - Muay Thai Boran',
                     description: 'This page provides information about the martial art of Muay Thai Boran as taught at Martial Arts Durban.'
                 }
-            })
+            });
 
         $locationProvider.html5Mode({
             enabled: true,
@@ -77,38 +77,38 @@
 
 
     martialArtsApp.service('ClassesDataService', function() {
-        
+
         this.classes = [{
-            name: 'Bagua Basics',
-            description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing.',
+            name: 'Xing Yi Chuan',
+            description: 'In this class we focus upon the basics of Xing Yi Chuan as well as its related weapons.',
             day: 'Wednesday',
             time: '17:00pm - 19:00pm',
-            location: 
+            location:
             {
               address: '58 Gordon Road',
                 suburb: 'Morningside',
                 city: 'Durban',
                 province: 'Kwa-zulu Natal'
             }
-        }, 
+        },
         {
-            name: 'Weapons, Xing Yi, Tai Ji and Muay Thai Boran',
-            description: 'In this class we focus upon the weapon systems of Bagua Zhang as well as a comparitive study of Tai Ji, Xing Yi and Muay Thai Boran.',
+            name: 'Bagua Zhang',
+            description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing. In addition, the weapon systems of Bagua Zhang will be studied.',
             day: 'Thursday',
             time: '17:00pm - 19:00pm',
-            location: 
+            location:
             {
                 address: '58 Gordon Road',
                 suburb: 'Morningside',
                 city: 'Durban',
                 province: 'Kwa-zulu Natal'
-            }        
+            }
         }];
 
     });
 
     martialArtsApp.service('ClassesService', function(ClassesDataService) {
-        
+
         this.getAllClasses = function() {
             return ClassesDataService.classes;
         };
@@ -116,7 +116,7 @@
     });
 
     martialArtsApp.service('QuotesDataService', function() {
-       
+
         this.quotes = [{
             text: 'Everything flows, nothing stands still',
             author: 'Heraclitus of Ephesus'
@@ -222,7 +222,7 @@
     });
 
     martialArtsApp.service('QuotesService', function(QuotesDataService) {
-        
+
         this.getRandomQuote = function() {
             var quotesLength = QuotesDataService.quotes.length;
             var randomItem = Math.floor((Math.random() * quotesLength));
@@ -232,8 +232,8 @@
     });
 
     martialArtsApp.service('MuayBoranDataService', function() {
-            
-        this.techniques = [{  
+
+        this.techniques = [{
             MaeMai: [
             {
                 thaiName: 'Salab Fan Pla',
@@ -245,7 +245,7 @@
                 thaiName: 'Paksa Waeg Rang',
                 englishName: 'Bird Peeping Through The Nest',
                 description: 'The name of this technique is likened to the action of a bird trying to break into its nest. Paksa Weak Rang is a defensive Mae Mai Muay technique which can be used to defend against attempts to grab ones neck before launching the knee or entering into the clinch. As the picture illustrates, the attacker tries to grab the defenders neck before attacking with the knee. The defender then inserts both arms between the gaps between the attacker’s arms. This is followed by a knee strike. This technique can also be applied to when the attacker throws a punch. The defender can use this technique to push away the attacker’s punch and then respond with other weapons. ',
-                imgSrc: 'assets/img/paksa-weak-rang.jpg'  
+                imgSrc: 'assets/img/paksa-weak-rang.jpg'
             },
             {
                 thaiName: 'Chawa Sod Hok',
@@ -281,7 +281,7 @@
                 thaiName: 'Pak Look Thoy',
                 englishName: 'Impaling the stake',
                 description: 'The name of this technique is likened to the action of a wooden stick that is being stuck into a tree trunk. Although Pak Look Toi is a defensive technique, it is also one of the most deadly Mae Mai techniques of attack. The defender uses the elbows to block the attackers kick.',
-                imgSrc: 'assets/img/pak-look-thoy.jpg'  
+                imgSrc: 'assets/img/pak-look-thoy.jpg'
             },
             {
                 thaiName: 'Hak Nguang Aiyara',
@@ -342,37 +342,37 @@
                 thaiName: 'Khun Yak Pa Nang',
                 englishName: 'Throwing The Man',
                 description: 'The attacker throws the straight left punch and steps forwards, guarding his chin with the right fist. The defender hurries to step the right foot outside the attackers left foot, grabs the waist and throws him to the floor.',
-                imgSrc: 'assets/img/khun-yak-pa-nang.jpg'  
+                imgSrc: 'assets/img/khun-yak-pa-nang.jpg'
             },
             {
                 thaiName: 'Prarama Nao Sorn',
                 englishName: 'King Rama Pulls The Arrowstring',
                 description: 'This technique is used for defence again the attackers elbow. The attacker steps forward and raises both elbows to strike on the head. The defender steps into the attack, raises the rear arm to block and counters with the opposite uppercut.',
-                imgSrc: 'assets/img/pra-ram-nao-sorn.jpg' 
+                imgSrc: 'assets/img/pra-ram-nao-sorn.jpg'
             },
             {
                 thaiName: 'Graisorn Kham Huai',
                 englishName: 'Tiger crosses the Stream',
                 description: 'In this technique the defender escapes from the attacking kick and throws the straight kick at the back leg. This complimentary technique is used in defence against BATA LOOB PAK. After the attacker tries to kick the chin, the defender steps backwards onto the left foot and bends his body down to escape. He then jumps in with a straight right kick to the inner thigh/knee.',
-                imgSrc: 'assets/img/graisorn-khan-hua.jpg'   
+                imgSrc: 'assets/img/graisorn-khan-hua.jpg'
             },
             {
                 thaiName: 'Kwang Liew Lang',
                 englishName: 'Deer Looks Back',
                 description: 'The name of this technique is likened to the action made when a deer turns its head to look back.  Like the sharp horns of the deer, when the boxer turns back, his legs will do damage. This technique is used by the boxer to defend against a punch by launching a reverse back kick.  As the picture illustrates, the defender responds to the attack by stepping backwards to avoid the punch. He then uses a reverse back kick to counter the attack.',
-                imgSrc: 'assets/img/kwang-leaw-lang.jpg' 
+                imgSrc: 'assets/img/kwang-leaw-lang.jpg'
             },
             {
                 thaiName: 'Hiran Nuan Pan Din',
                 englishName: 'Giant Turning The Earth',
                 description: 'The attacker launches a right kick to the defensives rib. The defender uses Pak Look Toi and rolls into Wirun Hok Klab.',
-                imgSrc: 'assets/img/hiran-muan-pan-din.jpg'  
+                imgSrc: 'assets/img/hiran-muan-pan-din.jpg'
             },
             {
                 thaiName: 'Naga Mood Badan',
                 englishName: 'Serpent Sneaks To The Ocean',
                 description: 'The name of this technique is likened to the action of a man dipping his head in the water. One uses this technique to respond to a punching attack. As the picture illustrates when the attacker throws the punch from the back, the defender bends down to avoid the punch. At the same time he responds by kicking the attacker.',
-                imgSrc: 'assets/img/naka-bid-hang.jpg' 
+                imgSrc: 'assets/img/naka-bid-hang.jpg'
             },
             {
                 thaiName: 'Hanuman Thawai Waen',
@@ -421,7 +421,7 @@
     });
 
     martialArtsApp.service('MuayBoranService', function(MuayBoranDataService) {
-        
+
         this.getAllTechniques = function() {
             return MuayBoranDataService.techniques;
         };
@@ -429,7 +429,7 @@
     });
 
     martialArtsApp.controller('appCtrl', ['$scope', function($scope) {
-        
+
         $scope.showContactUs = function() {
             $scope.showContactUsBoolean = true;
 
@@ -437,35 +437,35 @@
                 $scope.showContactUsBoolean = false;
             }
             return $scope.showContactUsBoolean;
-        };    
- 
-        
+        };
+
+
     }]);
 
     martialArtsApp.controller('muayBoranCtrl', ['$scope', 'MuayBoranService', function($scope, MuayBoranService) {
-        
+
         $scope.techniques = MuayBoranService.getAllTechniques();
         $scope.techniquesMaeMai = $scope.techniques[0].MaeMai;
         $scope.techniquesLukMai = $scope.techniques[0].LukMai;
 
     }]);
-   
+
     martialArtsApp.controller('classesCtrl', ['$scope', 'ClassesService', function($scope, ClassesService) {
-       
+
         $scope.classes = ClassesService.getAllClasses();
 
     }]);
 
 
     martialArtsApp.directive('title', ['$rootScope', '$timeout', 'QuotesService',
-    
+
         function($rootScope, $timeout, QuotesService) {
             return {
-                
+
                     link: function() {
 
                     var listener = function(event, toState) {
-                        
+
                         $timeout(function() {
                             $rootScope.title = (toState.data && toState.data.pageTitle) ? toState.data.pageTitle : 'Martial Arts Durban';
                             $rootScope.description = (toState.data && toState.data.description) ? toState.data.description : 'Internal martial arts in Durban, South Africa';
@@ -478,6 +478,6 @@
             };
         }
 
-    ]);    
+    ]);
 
 }());
