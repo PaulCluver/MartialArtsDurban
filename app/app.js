@@ -78,32 +78,45 @@
 
     martialArtsApp.service('ClassesDataService', function() {
 
-        this.classes = [{
-            name: 'Xing Yi Chuan',
-            description: 'In this class we focus upon the basics of Xing Yi Chuan as well as its related weapons.',
-            day: 'Wednesday',
-            time: '17:00pm - 19:00pm',
-            location:
-            {
-              address: '58 Gordon Road',
-                suburb: 'Morningside',
-                city: 'Durban',
-                province: 'Kwa-zulu Natal'
-            }
-        },
-        {
-            name: 'Bagua Zhang',
-            description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing. In addition, the weapon systems of Bagua Zhang will be studied.',
-            day: 'Thursday',
-            time: '17:00pm - 19:00pm',
-            location:
-            {
-                address: '58 Gordon Road',
-                suburb: 'Morningside',
-                city: 'Durban',
-                province: 'Kwa-zulu Natal'
-            }
-        }];
+      this.classes = [{
+         name: 'Weapons',
+         description: 'In this class we focus upon the sword, sabre, spear and staff of Bagua Zhang and Xing Yi Chuan.',
+         day: 'Thursday',
+         time: '18:00pm - 209:00pm',
+         location:
+         {
+           address: '58 Gordon Road',
+             suburb: 'Morningside',
+             city: 'Durban',
+             province: 'Kwa-zulu Natal'
+         }
+      },
+      {
+         name: 'Xing Yi Chuan',
+         description: 'In this class we focus upon the basics of Xing Yi Chuan which include 5 element and 12 animal boxing as well as their associated linking forms. In addition, various standing strengthening exercises are taught and trained.',
+         day: 'Thursday',
+         time: '17:00pm - 19:00pm',
+         location:
+         {
+           address: '58 Gordon Road',
+             suburb: 'Morningside',
+             city: 'Durban',
+             province: 'Kwa-zulu Natal'
+         }
+      },
+      {
+         name: 'Bagua Zhang',
+         description: 'In this class we focus upon the basics of Bagua Zhang which include standing, striking, turning and changing. In addition, the weapon systems of Bagua Zhang will be studied.',
+         day: 'Thursday',
+         time: '17:00pm - 19:00pm',
+         location:
+         {
+             address: '58 Gordon Road',
+             suburb: 'Morningside',
+             city: 'Durban',
+             province: 'Kwa-zulu Natal'
+         }
+      }];
 
     });
 
